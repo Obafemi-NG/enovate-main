@@ -1,0 +1,12 @@
+.main {
+  scroll-snap-type: proximity;
+  /* max-width: 1920px; */
+}
+.page-content {
+  padding-top: 139px;
+}
+@media screen and (max-width: 480px) {
+  .page-content {
+    padding-top: 104px;
+  }
+}

@@ -1,0 +1,69 @@
+.member {
+  padding: 8px;
+  background-color: white;
+  border-radius: 16px;
+}
+.image-container {
+  width: 230px;
+  height: auto;
+  position: relative;
+}
+.under-lay {
+  padding: 2px;
+  background-color: transparent;
+}
+.under-lay:hover {
+  background: linear-gradient(
+    89.97deg,
+    rgba(146, 235, 255, 1) 0.02%,
+    rgba(139, 152, 255, 1) 50.31%,
+    rgba(103, 254, 155, 1) 99.98%
+  );
+  padding: 2px;
+  border-radius: 16px;
+}
+.member-image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-color: white;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: flex-end;
+  font-feature-settings: "ss03" on;
+  color: #313131;
+  margin-top: 8px;
+}
+.position {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: capitalize;
+  font-feature-settings: "ss03" on;
+  color: #767676;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .image-container {
+    /* width: 200px; */
+  }
+  .position {
+    font-size: 12px;
+  }
+}

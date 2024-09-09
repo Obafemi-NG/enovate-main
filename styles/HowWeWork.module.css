@@ -1,0 +1,153 @@
+.section-container {
+  margin: 96px 48px;
+  position: relative;
+}
+.section-title {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 24px;
+  line-height: 65px;
+  font-feature-settings: "ss03" on;
+  color: #313131;
+}
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.work-card {
+  padding: 24px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "ss03" on;
+  color: #313131;
+}
+.detail {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 8px;
+  display: flex;
+  align-items: flex-end;
+  font-feature-settings: "ss03" on;
+  color: #767676;
+}
+
+.deliver-container {
+  background: url("../public/enovatePattern.png"), #54ea87;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  border-radius: 24px;
+  padding: 64px 0px;
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profit-title {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 86px;
+  font-feature-settings: "ss03" on;
+  color: #ffffff;
+}
+.btn {
+  padding: 16px 24px;
+  margin-top: 24px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  font-feature-settings: "ss03" on;
+  color: #767676;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(249, 249, 249, 0.8) 100%);
+  border-radius: 24px;
+  display: flex;
+  border: none;
+}
+.btn:hover {
+  background: linear-gradient(
+    -90deg,
+    #ffffff 0%,
+    rgba(249, 249, 249, 0.8) 100%
+  );
+  cursor: pointer;
+}
+.arrow {
+  margin-left: 14px;
+}
+
+@media screen and (min-width: 1600px) {
+  .detail {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
+  .section-container {
+    margin: 48px 24px;
+  }
+  .work-card {
+    width: 50%;
+  }
+  .profit-title {
+    text-align: center;
+    font-size: 52px;
+    line-height: 72.8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-container {
+    margin: 48px 0px;
+    padding: 0px 16px;
+  }
+  .section-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    width: 328px;
+    margin-bottom: 16px;
+  }
+  .work-card {
+    width: 100%;
+  }
+  .deliver-container {
+    padding: 24px 0px;
+  }
+
+  .profit-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    width: 328px;
+    text-align: center;
+  }
+  .btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .vector {
+    width: 20px;
+    height: auto;
+  }
+}

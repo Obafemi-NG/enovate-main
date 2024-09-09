@@ -1,0 +1,36 @@
+.carouselContainerInner {
+  overflow-x: scroll;
+  display: flex;
+  gap: 32px;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  padding: 0px 16px;
+  scrollbar-width: none;
+}
+.carouselContainerInner::-webkit-scrollbar {
+  display: none;
+}
+.carouselContainerInner > * {
+  scroll-snap-align: center;
+}
+.control-container {
+  margin-top: 24px;
+  margin-right: 32px;
+  display: flex;
+  justify-content: flex-end;
+}
+.scroll-right {
+  margin-left: 16px;
+}
+.opaque {
+  opacity: 0.2;
+}
+.non-opaque:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 920px) and (min-width: 481px) {
+  .carouselContainerInner {
+    gap: 48px;
+  }
+}

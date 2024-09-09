@@ -1,0 +1,138 @@
+.navbar {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-container-wrapper {
+  background: linear-gradient(
+    89.97deg,
+    rgba(146, 235, 255, 0.3) 0.02%,
+    rgba(103, 254, 155, 0.3) 50.31%,
+    rgba(139, 152, 255, 0.3) 99.98%
+  );
+  padding: 2px;
+  margin: 16px 48px;
+  border-radius: 16px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 16px;
+}
+.right-section {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.logo-description {
+  font-size: 10px;
+  line-height: 14px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  color: #767676;
+}
+.explore-container {
+  display: flex;
+  align-items: center;
+}
+.explore-container:hover {
+  cursor: pointer;
+}
+.explore {
+  font-family: "satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.6px;
+  color: #767676;
+  font-feature-settings: "ss03" on;
+}
+.explore_svg_container {
+  padding: 6px 10px;
+  margin-left: 4px;
+}
+.explore_white_container {
+  background-color: #767676;
+  border-radius: 12px;
+  padding: 6px 10px;
+  margin-left: 4px;
+}
+.mobile-dropdown {
+  display: none;
+}
+.mobile-menu-wrapper {
+  display: none;
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
+  .header-container-wrapper {
+    margin: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-container-wrapper {
+    margin: 16px;
+  }
+  .header-container {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-logo {
+    width: 150px;
+    height: auto;
+  }
+  .right-section {
+    display: none;
+  }
+  .whole-wrapper {
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mobile-menu-wrapper {
+    display: block;
+    background: linear-gradient(
+      89.97deg,
+      #92ebff 0.02%,
+      #8b98ff 50.31%,
+      #67fe9b 99.98%
+    );
+    padding: 1px;
+    border-radius: 24px;
+  }
+  .mobile-menu {
+    padding: 8px 24px;
+    gap: 64px;
+    background-color: white;
+    border-radius: 24px;
+  }
+  .explore {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .web-dropdown {
+    display: none;
+  }
+  .mobile-dropdown {
+    width: 100%;
+    display: flex;
+  }
+}

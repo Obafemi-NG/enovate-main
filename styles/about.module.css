@@ -1,0 +1,124 @@
+.page-container {
+  padding-top: 139px;
+  /* max-width: 1920px; */
+  position: relative;
+}
+.top {
+  width: 65%;
+  /* background-color: red; */
+  margin: auto;
+  margin-top: 48px;
+  text-align: center;
+}
+.page-title {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 130px;
+  font-feature-settings: "ss03" on;
+  color: #313131;
+}
+.about-details {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #767676;
+  /* background-color: rebeccapurple; */
+}
+.about-list {
+  margin-bottom: 8px;
+  list-style: none;
+}
+.bandwagon {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 65px;
+  font-feature-settings: "ss03" on;
+  color: #313131;
+  text-align: center;
+  margin-top: 96px;
+  margin-bottom: 32px;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  gap: 48px;
+  margin-bottom: 36px;
+}
+
+.vector {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 96px;
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
+  .top {
+    width: 90%;
+    margin-top: 24px;
+  }
+  .bandwagon {
+    margin-top: 48px;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .team-container {
+    width: 90%;
+    justify-content: center;
+  }
+  .vector {
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-container {
+    padding: 139px 0px 16px 0px;
+  }
+  .top {
+    width: 100%;
+    margin-top: 16px;
+    padding: 0px 16px;
+  }
+  .page-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+  }
+  .about-details {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .bandwagon {
+    font-size: 28px;
+    margin-top: 48px;
+    line-height: 33.6px;
+    padding: 0px 16px;
+  }
+  .team-container {
+    padding: 0px 16px;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: unset;
+  }
+  .vector {
+    width: 600px;
+    height: 100px;
+  }
+}

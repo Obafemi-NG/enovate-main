@@ -1,0 +1,30 @@
+generator client{
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url = env("POSTGRES_PRISMA_URL")
+    directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model TeamMember {
+    id  String  @default(cuid())    @id
+    name    String
+    position    String
+    imgUrl  String
+}
+
+// model ProjectTag {
+    
+// }
+
+model Project {
+    id  String @default(cuid()) @id
+    title   String
+    description String
+    year    String
+    finished    Boolean
+    // tags    
+    link    String
+}

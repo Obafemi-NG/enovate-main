@@ -1,0 +1,119 @@
+.section-container {
+  margin: 96px auto;
+  position: relative;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+.vector {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 96px;
+}
+.deliver-container {
+  border-radius: 24px;
+  padding: 64px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #f9f9f9;
+}
+.deliver-container::before {
+  border-radius: 1rem;
+  content: " ";
+  background: url("../public/images/pattern_bg.png");
+  background-repeat: no-repeat;
+  /* background-blend-mode: soft-light; */
+  background-position: center;
+  /* background-position: 50% 0; */
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+}
+.title {
+  font-family: "GT Flexa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 86px;
+  font-feature-settings: "ss03" on;
+  color: #313131;
+  z-index: 2;
+}
+.btn {
+  padding: 1rem 1.5rem;
+  margin-top: 24px;
+  display: flex;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: normal;
+  font-feature-settings: "ss03" on;
+  color: #5a5a5a;
+  background: #fefffb;
+  border-radius: 1.5rem;
+  border: 2px solid #5a5a5a;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.btn:hover {
+  box-shadow: 0px 0px 2px 4px #92ebff;
+  transition: 0.4s;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+.arrow {
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
+  .section-container {
+    margin: 0px 24px;
+  }
+  .vector {
+    margin-top: 0px;
+  }
+  .title {
+    font-size: 58px;
+  }
+  .deliver-container {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-container {
+    margin: 24px 16px 0px 16px;
+  }
+  .vector {
+    width: 100%;
+    margin-bottom: 24px;
+    margin-top: 16px;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    width: 328px;
+    text-align: center;
+  }
+  .btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .arrow {
+    margin-left: 12px;
+  }
+  .arrow-svg {
+    width: 20px;
+    height: auto;
+  }
+}

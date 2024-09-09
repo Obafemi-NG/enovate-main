@@ -1,0 +1,145 @@
+.hero-container {
+  padding: 0px 24px;
+  border-radius: 24px;
+  max-width: 1200px;
+  margin-left: auto;
+  position: relative;
+  margin-right: auto;
+  min-height: 80vh;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 100%;
+  transform: translate(50%, -60%);
+}
+.path_bg {
+  width: 480px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -70%);
+  z-index: -1;
+}
+.hero-title {
+  font-size: 80px;
+  font-family: "GT Flexa", sans-serif;
+  line-height: 97.2px;
+  font-weight: 500;
+  text-align: center;
+  color: #313131;
+}
+.gradient-text {
+  background: -webkit-linear-gradient(
+    310deg,
+    #92ebff 22.57%,
+    #8b98ff 51.87%,
+    #67fe9b 79.63%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-subtitle {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 32px;
+  font-family: "GT Flexa", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #313131;
+}
+.bold-text {
+  font-weight: 400;
+}
+.btns-container {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  margin-top: 48px;
+  justify-content: center;
+}
+.mouse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin-left: auto;
+  position: absolute;
+  bottom: 32px;
+  right: 18px;
+  row-gap: 4px;
+  animation: moveMouse 3s ease-in-out infinite;
+}
+.scroll {
+  font-family: "satoshi", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #5a5a5a;
+  font-feature-settings: "ss03" on;
+}
+
+@keyframes moveMouse {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
+  .hero-container {
+    margin: 24px;
+    padding: 36px 24px;
+  }
+  .hero-title {
+    font-size: 74px;
+    line-height: 90px;
+  }
+  .hero-subtitle {
+    width: 80%;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-container {
+    margin: 16px;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+  }
+}

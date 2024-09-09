@@ -1,0 +1,143 @@
+.section-container {
+  margin: 48px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  max-width: 1200px;
+}
+.section-title {
+  font-family: "GT Flexa", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: normal;
+  font-feature-settings: "ss03" on;
+  width: 65%;
+  color: #313131;
+}
+.gradient-text {
+  background: -webkit-linear-gradient(
+    310deg,
+    #92ebff 22.57%,
+    #8b98ff 51.87%,
+    #67fe9b 79.63%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.processes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 3rem;
+  margin-top: 3rem;
+}
+.process-1,
+.process-2,
+.process-3 {
+  /* width: 400px; */
+  width: 30%;
+}
+.image-1-container {
+  background-color: #6ddbf3;
+}
+.image-2-container {
+  background-color: #7683ee;
+}
+.image-3-container {
+  background-color: #54ea87;
+  width: fit-content;
+}
+.image-1-container,
+.image-2-container,
+.image-3-container {
+  padding: 4px;
+  border-radius: 8px;
+}
+.top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.line-frame {
+  width: 80%;
+}
+.vertical-line-frame {
+  display: none;
+}
+.third-line-frame {
+  display: none;
+}
+.text {
+  margin-top: 1rem;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  width: 280px;
+  font-size: 18px;
+  line-height: 24px;
+  font-feature-settings: "ss03" on;
+  color: #313131;
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
+  .section-container {
+    margin: 48px 24px;
+  }
+  .section-title {
+    font-size: 58px;
+    line-height: 81.2px;
+    width: 90%;
+  }
+  .processes {
+    gap: 16px;
+  }
+  .line-frame {
+    width: 50%;
+    /* height: auto; */
+  }
+  .text {
+    width: 225px;
+    font-size: 16px;
+  }
+  .vertical-line-frame {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-container {
+    margin: 100px 16px 0px 16px;
+  }
+  .section-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    width: 328px;
+  }
+  .processes {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 24px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+  .process-1,
+  .process-2,
+  .process-3 {
+    width: 100%;
+  }
+  .line-frame {
+    display: none;
+  }
+  .vertical-line-frame {
+    margin: 16px 0px;
+    display: flex;
+  }
+}

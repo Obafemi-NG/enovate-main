@@ -1,0 +1,44 @@
+.text-input,
+.error-input {
+  width: 280px;
+  height: 45px;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 0px 16px;
+  background-color: transparent;
+  font-family: "Satoshi";
+  font-size: 16px;
+  border-radius: 0px !important;
+}
+.text-input {
+  border-bottom: #313131 1px solid;
+}
+.error-input::placeholder {
+  color: red;
+  text-align: center;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  font-feature-settings: "ss03" on;
+}
+.error-input {
+  border-bottom: red 1px solid;
+}
+
+@media screen and (max-width: 480px) {
+  .text-input,
+  .error-input {
+    width: 85vw;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
+  .text-input,
+  .error-input {
+    width: 45vw;
+  }
+}
