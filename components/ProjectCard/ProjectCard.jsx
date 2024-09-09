@@ -31,6 +31,7 @@ function ProjectCard({
             src={imgUrl}
             alt={projectName}
             fill={true}
+            // sizes=""
             className={styles["project-image"]}
           />
           <motion.div

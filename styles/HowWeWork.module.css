@@ -1,6 +1,8 @@
 .section-container {
-  margin: 96px 48px;
+  margin: 96px auto;
+  max-width: 1200px;
   position: relative;
+  padding: 0 24px;
 }
 .section-title {
   font-family: "Satoshi";
