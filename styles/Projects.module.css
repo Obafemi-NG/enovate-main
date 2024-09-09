@@ -1,40 +1,64 @@
 .section-container {
-  margin: 96px 48px;
+  margin: 48px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 24px;
+  max-width: 1200px;
+}
+.section-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 .section-title {
-  font-family: "Satoshi", sans-serif;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 86.4px;
+  font-family: "GT Flexa", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: normal;
   color: #313131;
+  text-align: center;
   font-style: normal;
   font-feature-settings: "ss03" on;
 }
+.gradient-text {
+  background: -webkit-linear-gradient(
+    310deg,
+    #92ebff 22.57%,
+    #8b98ff 51.87%,
+    #67fe9b 79.63%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .section-subtitle {
-  font-family: "Satoshi", sans-serif;
-  font-size: 20;
-  line-height: 27px;
-  font-weight: 400;
-  color: #767676;
-  width: 500px;
+  font-family: "GT Flexa", sans-serif;
+  font-size: 1rem;
+  line-height: normal;
+  font-weight: 200;
+  color: #5a5a5a;
+  width: 80%;
+  text-align: center;
   font-feature-settings: "ss03" on;
 }
 .project-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   width: 100%;
-  gap: 5%;
-  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 1120px) and (min-width: 481px) {
   .section-container {
-    margin: 96px 24px;
+    margin: 48px auto;
+    padding: 48px 16px;
   }
   .section-title {
-    font-size: 58px;
-    line-height: 81.2px;
+    font-size: 2.75rem;
+    line-height: normal;
   }
   .section-subtitle {
     margin-top: 8px;

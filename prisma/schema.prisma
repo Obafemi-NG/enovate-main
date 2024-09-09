@@ -25,6 +25,6 @@ model Project {
     description String
     year    String
     finished    Boolean
-    // tags    
-    link    String
+    link    String?
+    imageLink   String
 }

@@ -11,8 +11,18 @@ import Footer from "../sections/Footer";
 import { useDispatch } from "react-redux";
 import { dropDownAction } from "../redux/slice/dropDownSlice";
 import PreFooter from "../sections/PreFooter";
+import prisma from "../lib/prisma";
 
-export default function Home({ projects }) {
+export const getStaticProps = async () => {
+  const data = await prisma.project.findMany();
+  // console.log(data);
+  return {
+    props: { result: data },
+  };
+};
+
+export default function Home({ result }) {
+  console.log(result);
   const dispatch = useDispatch();
   const closeDropDown = () => {
     dispatch(dropDownAction.close());
@@ -35,7 +45,7 @@ export default function Home({ projects }) {
           <Hero />
           <Video />
           <Expertise />
-          {/* <Projects /> */}
+          <Projects result={result} />
           <BuildingProcess />
           <Faq />
           <PreFooter />

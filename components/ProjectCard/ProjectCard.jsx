@@ -12,8 +12,8 @@ function ProjectCard({
   projectYear,
   description,
   finished,
-  big,
-  projectTag,
+  // big,
+  // projectTag,
   link,
 }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,13 +21,7 @@ function ProjectCard({
   return (
     // Web Project Card Container
     <>
-      <div
-        className={
-          big
-            ? `${styles["big-card-container"]}`
-            : `${styles["card-container"]}`
-        }
-      >
+      <div>
         <div
           onMouseOver={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -66,10 +60,10 @@ function ProjectCard({
                 <div className={styles["view-project"]}> Coming Soon </div>
               )}
             </div>
-            <p className={styles["description"]}>{description}</p>
+            {/* <p className={styles["description"]}>{description}</p> */}
           </motion.div>
           {/* Project description for tablets */}
-          <div className={styles["tablet-project-description"]}>
+          {/* <div className={styles["tablet-project-description"]}>
             <div className={styles.top}>
               <p className={styles.year}> {projectYear} </p>
               {finished ? (
@@ -89,19 +83,11 @@ function ProjectCard({
                 <div className={styles["view-project"]}> Coming Soon </div>
               )}
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={styles["details"]}>
           <h4 className={styles["project-name"]}> {projectName} </h4>
-          <div className={styles["tags"]}>
-            {projectTag.map((tag) => {
-              return (
-                <div className={styles["under-lay"]} key={tag}>
-                  <p className={styles["tag"]}>{tag}</p>
-                </div>
-              );
-            })}
-          </div>
+          <p className={styles["description"]}>{description}</p>
         </div>
       </div>
       {/* Mobile Project container card */}
@@ -143,7 +129,7 @@ function ProjectCard({
         </div>
         <div className={styles["details"]}>
           <h4 className={styles["project-name"]}> {projectName} </h4>
-          <div className={styles["tags"]}>
+          {/* <div className={styles["tags"]}>
             {projectTag.map((tag) => {
               return (
                 <div className={styles["under-lay"]} key={tag}>
@@ -151,7 +137,7 @@ function ProjectCard({
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

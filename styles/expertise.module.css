@@ -89,19 +89,20 @@
 
 @media only screen and (max-width: 1120px) and (min-width: 481px) {
   .section-container {
-    margin: 0px 24px;
+    margin: 0px auto;
+    padding: 0px 16px;
   }
   .section-title {
     font-size: 58px;
     line-height: 81.2px;
   }
   .cards {
-    display: none;
+    grid-template-columns: 1fr 1fr;
   }
-  .mobile-cards {
+  /* .mobile-cards {
     display: block;
     margin-top: 48px;
-  }
+  } */
   .section-subtitle {
     width: 70%;
     margin-top: 8px;
