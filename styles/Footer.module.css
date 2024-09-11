@@ -164,8 +164,6 @@
   }
   .bottom {
     width: 100%;
-    gap: 3%;
-    justify-content: unset;
   }
   .contact-text {
     width: 80%;
@@ -183,7 +181,8 @@
 }
 @media screen and (max-width: 480px) {
   .section-container {
-    margin: 64px 16px 48px 16px;
+    margin: 64px auto 48px auto;
+    padding: 8px 16px;
   }
   .logo-description {
     font-size: 10px;

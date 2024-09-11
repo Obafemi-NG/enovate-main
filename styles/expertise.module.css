@@ -1,5 +1,4 @@
 .section-container {
-  /* margin: 96px 48px; */
   max-width: 1200px;
   margin: 48px auto;
   display: flex;
@@ -15,12 +14,6 @@
   color: #313131;
 }
 .gradient-text {
-  /* background: -webkit-linear-gradient(
-    310deg,
-    #92ebff 22.57%,
-    #8b98ff 51.87%,
-    #67fe9b 79.63%
-  ); */
   background: linear-gradient(
     90deg,
     #92ebff 2.82%,
@@ -47,14 +40,11 @@
 }
 .cards {
   display: grid;
-  grid-template-columns: 27rem 27rem;
+  grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
   row-gap: 1.5rem;
   width: fit-content;
   margin: 3rem auto 0 auto;
-}
-.mobile-cards {
-  display: none;
 }
 .gradient-container {
   margin-top: 130px;
@@ -64,27 +54,6 @@
   width: 100%;
   object-fit: contain;
   height: auto;
-}
-.mobile-swiggly {
-  display: none;
-}
-.star_1,
-.star_3 {
-  position: absolute;
-  top: 0;
-}
-
-.star_1 {
-  left: 320px;
-}
-.star_2 {
-  left: 670px;
-  position: absolute;
-  top: -25px;
-}
-.star_3 {
-  right: 160px;
-  top: -5px;
 }
 
 @media only screen and (max-width: 1120px) and (min-width: 481px) {
@@ -99,10 +68,6 @@
   .cards {
     grid-template-columns: 1fr 1fr;
   }
-  /* .mobile-cards {
-    display: block;
-    margin-top: 48px;
-  } */
   .section-subtitle {
     width: 70%;
     margin-top: 8px;
@@ -121,37 +86,30 @@
 @media screen and (max-width: 480px) {
   .section-container {
     margin: 48px 0px;
+    padding: 0px 16px;
   }
   .section-title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 43px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: normal;
     text-align: center;
-    width: 296px;
+    width: 90%;
     align-self: center;
     margin-left: 50%;
     transform: translateX(-50%);
   }
   .section-subtitle {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    width: 296px;
-    margin-top: 4px;
+    width: 80%;
+    margin-top: 8px;
     margin-left: 50%;
     transform: translateX(-50%);
   }
   .cards {
-    display: none;
-  }
-  .star_1,
-  .star_2,
-  .star_3 {
-    display: none;
-  }
-  .swiggly {
-    display: none;
+    grid-template-columns: 1fr;
   }
   .gradient-container {
     margin-top: 64px;
@@ -159,9 +117,5 @@
   }
   .mobile-swiggly {
     display: block;
-  }
-  .mobile-cards {
-    display: block;
-    margin-top: 48px;
   }
 }

@@ -81,11 +81,11 @@ function Footer() {
                 <p
                   onClick={(e) => {
                     e.preventDefault();
-                    window.location.href = "mailto:HQ@enovate.work";
+                    window.location.href = "mailto:hq@enovate.work";
                   }}
                   className={styles.email}
                 >
-                  hello@enovate.work
+                  hq@enovate.work
                 </p>
               </div>
             </div>

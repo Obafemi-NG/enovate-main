@@ -4,7 +4,6 @@ import styles from "../styles/Projects.module.css";
 import { projects } from "../projects";
 
 function Projects({ result }) {
-  // console.log(result);
   return (
     <div className={styles["section-container"]}>
       <div className={styles["section-details"]}>

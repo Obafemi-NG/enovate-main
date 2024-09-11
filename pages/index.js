@@ -22,7 +22,6 @@ export const getStaticProps = async () => {
 };
 
 export default function Home({ result }) {
-  console.log(result);
   const dispatch = useDispatch();
   const closeDropDown = () => {
     dispatch(dropDownAction.close());

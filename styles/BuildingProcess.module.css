@@ -115,19 +115,21 @@
 }
 @media screen and (max-width: 480px) {
   .section-container {
-    margin: 100px 16px 0px 16px;
+    margin: 100px auto 0px auto;
+    padding: 0px 16px;
   }
   .section-title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 43px;
-    width: 328px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: normal;
+    width: 90%;
   }
   .processes {
     flex-direction: column;
     justify-content: center;
     gap: 0px;
     margin-top: 24px;
+    width: 100%;
   }
   .text {
     font-size: 16px;

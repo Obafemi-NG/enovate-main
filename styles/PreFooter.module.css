@@ -91,7 +91,8 @@
 
 @media screen and (max-width: 480px) {
   .section-container {
-    margin: 24px 16px 0px 16px;
+    margin: 24px auto;
+    padding: 0px 16px;
   }
   .vector {
     width: 100%;
@@ -99,10 +100,10 @@
     margin-top: 16px;
   }
   .title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 43px;
-    width: 328px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: normal;
+    width: 80%;
     text-align: center;
   }
   .btn {

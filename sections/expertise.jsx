@@ -105,9 +105,9 @@ function Expertise() {
             );
           })}
         </div>
-        <div className={styles["mobile-cards"]}>
+        {/* <div className={styles["mobile-cards"]}>
           <CarouselScroll>{mappedItem}</CarouselScroll>
-        </div>
+        </div> */}
       </div>
       <div className={styles["gradient-container"]}>
         <Image
@@ -116,12 +116,6 @@ function Expertise() {
           // width={2000}
           className={styles["swiggly"]}
           priority
-        />
-        <Image
-          src={mSwiggly}
-          alt="gradient"
-          width={460}
-          className={styles["mobile-swiggly"]}
         />
       </div>
     </>

@@ -92,7 +92,7 @@ function ProjectCard({
         </div>
       </div>
       {/* Mobile Project container card */}
-      <div className={styles["mobile-card-container"]}>
+      {/* <div className={styles["mobile-card-container"]}>
         <div className={styles["mobile-image-container"]}>
           <Image
             src={imgUrl}
@@ -130,17 +130,9 @@ function ProjectCard({
         </div>
         <div className={styles["details"]}>
           <h4 className={styles["project-name"]}> {projectName} </h4>
-          {/* <div className={styles["tags"]}>
-            {projectTag.map((tag) => {
-              return (
-                <div className={styles["under-lay"]} key={tag}>
-                  <p className={styles["tag"]}>{tag}</p>
-                </div>
-              );
-            })}
-          </div> */}
+          
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
