@@ -39,6 +39,7 @@
   font-feature-settings: "ss03" on;
   color: #313131;
   letter-spacing: -0.045rem;
+  text-align: center;
 }
 .detail {
   font-family: "Satoshi";
