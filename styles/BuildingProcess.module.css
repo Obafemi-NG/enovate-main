@@ -7,15 +7,16 @@
   max-width: 1200px;
 }
 .section-title {
-  font-family: "GT Flexa", sans-serif;
+  font-family: "Clash Grotesk", sans-serif;
   font-style: normal;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 3rem;
   line-height: normal;
   font-feature-settings: "ss03" on;
   width: 65%;
   color: #313131;
+  letter-spacing: -0.09rem;
 }
 .gradient-text {
   background: -webkit-linear-gradient(
@@ -119,7 +120,7 @@
     padding: 0px 16px;
   }
   .section-title {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2rem;
     line-height: normal;
     width: 90%;

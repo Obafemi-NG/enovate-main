@@ -6,15 +6,16 @@
   position: relative;
 }
 .section-title {
-  font-family: "GT Flexa";
+  font-family: "Clash Grotesk", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 3rem;
   line-height: normal;
   text-align: center;
   font-feature-settings: "ss03" on;
   color: #313131;
   margin-bottom: 48px;
+  letter-spacing: -0.09rem;
 }
 .faq-content {
   display: flex;
@@ -29,9 +30,9 @@
   border-bottom: 2px solid #f9f9f9;
 }
 .question {
-  font-family: "GT Flexa";
+  font-family: "Clash Grotesk", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.25rem;
   line-height: 40px;
   display: flex;
@@ -45,9 +46,9 @@
 }
 .answer {
   width: 450px;
-  font-family: "GT Flexa";
+  font-family: "Satoshi";
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   display: flex;
@@ -69,10 +70,10 @@
   border-radius: 16px;
 }
 .have-question {
-  font-family: "GT Flexa", sans-serif;
+  font-family: "Clash Grotesk", sans-serif;
   width: 250px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5rem;
   margin-top: 16px;
   line-height: 2.5rem;
@@ -80,6 +81,7 @@
   align-items: flex-end;
   text-align: center;
   color: #313131;
+  letter-spacing: -0.045rem;
 }
 
 .details {
@@ -152,7 +154,7 @@
     padding: 0px 16px;
   }
   .section-title {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2rem;
     line-height: normal;
     /* width: 328px; */

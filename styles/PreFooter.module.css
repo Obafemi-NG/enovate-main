@@ -36,9 +36,10 @@
   opacity: 0.1;
 }
 .title {
-  font-family: "GT Flexa";
+  font-family: "Clash Grotesk", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: -0.09rem;
   font-size: 4rem;
   line-height: 86px;
   font-feature-settings: "ss03" on;
@@ -100,7 +101,8 @@
     margin-top: 16px;
   }
   .title {
-    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: -0.045rem;
     font-size: 2rem;
     line-height: normal;
     width: 80%;

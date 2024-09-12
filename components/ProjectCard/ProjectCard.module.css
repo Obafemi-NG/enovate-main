@@ -21,13 +21,14 @@
   margin-top: 16px;
 }
 .project-name {
-  font-family: "GT Flexa", sans-serif;
+  font-family: "Clash Grotesk", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.25rem;
   line-height: normal;
   font-feature-settings: "ss03" on;
   color: #313131;
+  letter-spacing: -0.03rem;
 }
 .under-lay {
   background: linear-gradient(
@@ -101,14 +102,15 @@
   background-color: transparent;
 }
 .description {
-  font-family: "GT Flexa";
+  font-family: "Satoshi";
   font-style: normal;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1rem;
   line-height: normal;
   font-feature-settings: "ss03" on;
   color: #313131;
   margin-top: 8px;
+  letter-spacing: -0.03rem;
 }
 @media only screen and (max-width: 1120px) and (min-width: 481px) {
   .project-image:hover {
