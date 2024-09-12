@@ -3,38 +3,42 @@
   max-width: 1200px;
   position: relative;
   padding: 0 24px;
+  /* background-color: red; */
 }
 .section-title {
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 500;
+  font-family: "Clash Grotesk", sans-serif;
   text-align: center;
-  font-size: 48px;
-  margin-bottom: 24px;
-  line-height: 65px;
-  font-feature-settings: "ss03" on;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.09rem;
+  line-height: normal;
   color: #313131;
+  font-feature-settings: "ss03" on;
 }
 .work-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  margin: 0 auto;
+  width: fit-content;
 }
 .work-card {
-  padding: 24px;
-  width: 45%;
+  padding: 1.5rem;
+  max-width: 32rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: rebeccapurple; */
 }
 .title {
-  font-family: "Satoshi";
+  font-family: "Clash Grotesk", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
   font-feature-settings: "ss03" on;
   color: #313131;
+  letter-spacing: -0.045rem;
 }
 .detail {
   font-family: "Satoshi";
@@ -43,33 +47,45 @@
   font-size: 16px;
   line-height: 22px;
   margin-top: 8px;
-  display: flex;
-  align-items: flex-end;
+  text-align: center;
   font-feature-settings: "ss03" on;
   color: #767676;
 }
 
 .deliver-container {
-  background: url("../public/enovatePattern.png"), #54ea87;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
   border-radius: 24px;
-  padding: 64px 0px;
+  padding: 48px 16px;
   margin-top: 96px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #54ea87;
+  position: relative;
+}
+.deliver-container::before {
+  content: " ";
+  background: url("../public/images/pattern_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
 }
 
 .profit-title {
-  font-family: "Satoshi";
+  font-family: "Clash Grotesk", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 58px;
+  font-size: 3.75rem;
+  text-align: center;
   line-height: 86px;
   font-feature-settings: "ss03" on;
   color: #ffffff;
+  z-index: 2;
 }
 .btn {
   padding: 16px 24px;
@@ -77,39 +93,33 @@
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 1rem;
+  line-height: normal;
   font-feature-settings: "ss03" on;
-  color: #767676;
-  background: linear-gradient(90deg, #ffffff 0%, rgba(249, 249, 249, 0.8) 100%);
+  color: #5a5a5a;
+  background-color: #fff;
   border-radius: 24px;
+  border: 1.5px solid #5a5a5a;
   display: flex;
-  border: none;
+  align-items: center;
+  z-index: 2;
 }
 .btn:hover {
-  background: linear-gradient(
-    -90deg,
-    #ffffff 0%,
-    rgba(249, 249, 249, 0.8) 100%
-  );
   cursor: pointer;
-}
-.arrow {
-  margin-left: 14px;
-}
-
-@media screen and (min-width: 1600px) {
-  .detail {
-    width: 80%;
-  }
+  box-shadow: 0px 0px 2px 4px #8b98ff;
+  transition: 0.4s;
+  transition-timing-function: ease;
 }
 
 @media only screen and (max-width: 1120px) and (min-width: 481px) {
   .section-container {
-    margin: 48px 24px;
+    margin: 48px auto;
+    padding: 0px 16px;
   }
-  .work-card {
-    width: 50%;
+  .work-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
   }
   .profit-title {
     text-align: center;
@@ -122,11 +132,13 @@
     margin: 48px 0px;
     padding: 0px 16px;
   }
+  .work-container {
+    grid-template-columns: 1fr;
+  }
   .section-title {
     font-weight: 500;
     font-size: 32px;
     line-height: 43px;
-    width: 328px;
     margin-bottom: 16px;
   }
   .work-card {

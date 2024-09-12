@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import styles from "../styles/HowWeWork.module.css";
-import arrowRight from "../public/arrow-right-gray.svg";
+import briefCase from "../public/icons/box.svg";
 import { workData } from "../workData";
 import { motion, easeInOut } from "framer-motion";
 
@@ -31,17 +31,16 @@ const HowWeWork = () => {
           onMouseOver={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           animate={{
-            gap: isHovered ? "10px" : 0,
+            gap: isHovered ? "1rem" : "0.5rem",
             transition: { duration: 0.7, ease: easeInOut },
           }}
           className={styles.btn}
         >
-          {" "}
-          Work with us{" "}
+          <p>Work with us</p>
           <div className={styles.arrow}>
             {" "}
             <Image
-              src={arrowRight}
+              src={briefCase}
               alt="arrow-right"
               className={styles.vector}
             />{" "}

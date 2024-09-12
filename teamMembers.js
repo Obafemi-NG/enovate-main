@@ -9,37 +9,13 @@ export const teamMembers = [
   {
     id: "1",
     name: "Obafemi Oludahunsi",
-    position: "Co-founder/Head of Engineering",
+    position: "Co-founder/Lead Engineer",
     imgUrl: femi,
   },
   {
     id: "2",
     name: "Tomilola Shitta",
-    position: "Co-founder/Head of Design",
+    position: "Co-founder/Head Of Design",
     imgUrl: tomi,
-  },
-  {
-    id: "3",
-    name: "Nimi Akinleye",
-    position: "Co-founder/Frontend Developer",
-    imgUrl: tolu,
-  },
-  {
-    id: "4",
-    name: "Olanigbogbo Olajide",
-    position: "COO",
-    imgUrl: jide,
-  },
-  {
-    id: "5",
-    name: "Aleksandra Kandirovskaia",
-    position: "Illustrator/Motion Design",
-    imgUrl: alex,
-  },
-  {
-    id: "6",
-    name: "Victor Anih",
-    position: "Backend Developer",
-    imgUrl: victor,
   },
 ];

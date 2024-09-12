@@ -15,7 +15,6 @@ import prisma from "../lib/prisma";
 
 export const getStaticProps = async () => {
   const data = await prisma.project.findMany();
-  // console.log(data);
   return {
     props: { result: data },
   };
