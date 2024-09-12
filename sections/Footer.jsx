@@ -17,7 +17,7 @@ function Footer() {
   const [isHovered, setIsHovered] = useState(false);
   const route = useRouter();
   return (
-    <>
+    <section className={styles["footer-scaffold"]}>
       <div className={styles["section-container"]}>
         <div className={styles["footer-container"]}>
           <div className={styles.top}>
@@ -198,7 +198,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

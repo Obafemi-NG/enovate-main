@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Footer from "../../sections/Footer";
 import Header from "../../sections/Header";
 import styles from "../../styles/contact.module.css";
@@ -19,7 +19,11 @@ import CustomInput from "../../components/CustomInput/CustomInput";
 import { useDispatch } from "react-redux";
 import { dropDownAction } from "../../redux/slice/dropDownSlice";
 
+// emailJS
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
+  const formRef = useRef();
   const [isCollaborateBtnHovered, setIsCollaborateBtnHovered] = useState(false);
   const [isMailBtnHovered, setIsMailBtnHovered] = useState(false);
   const [checkedDollars, setCheckedDollars] = useState(true);
@@ -51,9 +55,25 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    route.push("/contact/success");
-    console.log(formDetails);
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        formRef.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          route.push("/contact/success");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
+
   const dispatch = useDispatch();
   const closeDropdown = () => {
     dispatch(dropDownAction.close());
@@ -69,7 +89,11 @@ const Contact = () => {
           </div>
           <Image className={styles.star} src={star3} alt="star3" />
         </div>
-        <form onSubmit={handleSubmit} className={styles["form-container"]}>
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className={styles["form-container"]}
+        >
           <div className={styles["top-input"]}>
             <div className={styles["name-container"]}>
               <p className={styles.text}>Hi, My name is </p>
@@ -244,15 +268,14 @@ const Contact = () => {
           </div>
           <motion.button
             animate={{
-              gap: isCollaborateBtnHovered ? "10px" : 0,
+              gap: isCollaborateBtnHovered ? "1rem" : "0.5rem",
               transition: { duration: 0.7, ease: easeInOut },
             }}
             onMouseOver={() => setIsCollaborateBtnHovered(true)}
             onMouseLeave={() => setIsCollaborateBtnHovered(false)}
             className={styles["collaborate-btn"]}
           >
-            {" "}
-            Let&rsquo;s Collaborate!{" "}
+            <p>Let&rsquo;s Collaborate!</p>
             <div className={styles["white-arrow"]}>
               {" "}
               <Image
@@ -268,18 +291,17 @@ const Contact = () => {
           <motion.button
             onClick={(e) => {
               e.preventDefault();
-              window.location.href = "mailto:HQ@enovate.work";
+              window.location.href = "mailto:hq@enovate.work";
             }}
             animate={{
-              gap: isMailBtnHovered ? "10px" : 0,
+              gap: isMailBtnHovered ? "1rem" : "0.5rem",
               transition: { duration: 0.7, ease: easeInOut },
             }}
             onMouseOver={() => setIsMailBtnHovered(true)}
             onMouseLeave={() => setIsMailBtnHovered(false)}
             className={styles.btn}
           >
-            {" "}
-            Shoot us a mail{" "}
+            <p>Shoot us a mail</p>
             <div className={styles.arrow}>
               {" "}
               <Image

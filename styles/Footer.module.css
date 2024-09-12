@@ -1,8 +1,11 @@
+.footer-scaffold {
+  background-color: #f9f9f9;
+}
 .section-container {
   margin: 96px auto 0px auto;
   position: relative;
   max-width: 1200px;
-  padding: 0 24px;
+  padding: 3rem 1.5rem;
 }
 
 .top {
@@ -160,7 +163,7 @@
 @media only screen and (max-width: 1120px) and (min-width: 481px) {
   .section-container {
     margin: 48px auto 0px auto;
-    padding: 0 16px;
+    padding: 3rem 16px;
   }
   .bottom {
     width: 100%;
@@ -181,8 +184,8 @@
 }
 @media screen and (max-width: 480px) {
   .section-container {
-    margin: 64px auto 48px auto;
-    padding: 8px 16px;
+    margin: 64px auto 0px auto;
+    padding: 24px 16px;
   }
   .logo-description {
     font-size: 10px;

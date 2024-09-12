@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 html {
-  overscroll-behavior: none;
+  overscroll-behavior: touch;
 }
 body {
   position: relative;

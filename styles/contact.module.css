@@ -1,6 +1,7 @@
 .page-container {
-  padding-top: 139px;
-  /* max-width: 1920px; */
+  padding-top: 9rem;
+  max-width: 1200px;
+  margin: 0px auto;
 }
 .top {
   display: flex;
@@ -9,13 +10,15 @@
   margin: 48px 48px 0px 48px;
 }
 .section-title {
-  font-family: "Satoshi";
+  font-family: "Clash Grotesk", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 130px;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 5rem;
   text-align: center;
-  width: 880px;
+  /* width: 880px; */
+  width: 70%;
+  letter-spacing: -0.15rem;
   font-feature-settings: "ss03" on;
   color: #313131;
 }
@@ -167,17 +170,21 @@ input[type="radio"]:checked + .label {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 27px;
-  background: linear-gradient(90deg, #92ebff 0%, #6ddbf3 100%);
+  background: #313131;
   border: none;
-  border-radius: 16px;
+  border-radius: 1.5rem;
   font-feature-settings: "ss03" on;
-  color: #ffffff;
+  color: #fff;
   margin-top: 32px;
+  display: flex;
+  align-items: center;
 }
 .collaborate-btn:hover {
-  background: linear-gradient(-90deg, #92ebff 0%, #6ddbf3 100%);
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 4px #8b98ff;
+  transition: 0.4s ease-out;
 }
 .white-arrow {
   margin-left: 14px;
@@ -189,7 +196,7 @@ input[type="radio"]:checked + .label {
   background-size: cover;
   border-radius: 24px;
   padding: 64px 0px;
-  margin: 96px 48px 0px 48px;
+  margin: 96px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,17 +220,16 @@ input[type="radio"]:checked + .label {
   font-size: 20px;
   line-height: 27px;
   font-feature-settings: "ss03" on;
-  color: #767676;
-  background: linear-gradient(90deg, #ffffff 0%, rgba(249, 249, 249, 0.8) 100%);
-  border-radius: 24px;
-  border: none;
+  color: #5a5a5a;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  border: 1.5px solid #5a5a5a;
 }
 .btn:hover {
-  background: linear-gradient(
-    -90deg,
-    #ffffff 0%,
-    rgba(249, 249, 249, 0.8) 100%
-  );
+  box-shadow: 0px 0px 2px 4px #6ddbf3;
+  transition: 0.4s;
+  transition-timing-function: ease;
+  cursor: pointer;
 }
 .collaborate-btn,
 .btn {

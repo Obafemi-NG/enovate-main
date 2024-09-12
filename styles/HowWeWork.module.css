@@ -3,7 +3,6 @@
   max-width: 1200px;
   position: relative;
   padding: 0 24px;
-  /* background-color: red; */
 }
 .section-title {
   font-family: "Clash Grotesk", sans-serif;
@@ -28,7 +27,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: rebeccapurple; */
 }
 .title {
   font-family: "Clash Grotesk", sans-serif;
