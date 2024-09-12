@@ -304,7 +304,9 @@ input[type="radio"]:checked + .label {
   }
   .section-title {
     font-size: 36px;
-    line-height: 44px;
+    line-height: normal;
+    letter-spacing: -0.05rem;
+    width: 100%;
   }
   .profit-title {
     font-size: 32px;
